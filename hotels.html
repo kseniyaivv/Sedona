@@ -30,20 +30,25 @@
         
     </header>
     <main>
-      <p> Инфраструктура: </p>
-        <ul>
-          <li> Бассейн </li>
-          <li> Парковка </li>
-          <li> Wi-Fi </li>
-        </ul>
-        <p> Тип жилья: </p>
-        <ul>
-          <li> Гостиница </li>
-          <li> Мотель </li>
-          <li> Апартаменты </li>
-        </ul>
-        <p> Стоимость в сутки (Р):</p>
-        <p> Показать </p>
+     <form>
+     <fieldset>
+       <label for="infrastructure"> Инфраструктура: </label>
+        <select multiple name="infrastructure">
+        
+          <option value="pool"> Бассейн </option>
+          <option value="parking"> Парковка </option>
+          <option value="wifi"> Wi-Fi </option>
+        </select>
+       <label for="type of housing"> Тип жилья: </label>
+        <select multiple name="type of housing">
+          <option value="hotel"> Гостиница </option>
+          <option value="motel"> Мотель </option>
+          <option value="apartments"> Апартаменты </option>
+        </select>
+        <label> Стоимость в сутки (Р):</label>
+        <input type="range" min="0" max="3000">
+        <input type="submit" value="Показать">
+      </fieldset>
       <h2> Найдено: 3 </h2>
       <p> Сортировка: </p>
       <ul>
@@ -72,7 +77,7 @@
         </ul>
         
         
-        
+     </form>  
       </section>
     </main>
     <footer>
