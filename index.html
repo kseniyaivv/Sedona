@@ -103,17 +103,17 @@
         Укажите предполагаемые даты поездки, 
         и мы покажем вам лучшие предложения гостиниц в седоне
      </h3>
-    <form>
+    <form method="post">
      <fieldset>
         <legend>ПОИСК ГОСТИНИЦЫ В седоне</legend>
      <label for="check-in">Дата заезда:</label>
-     <input type="date" name="check-in"> 
+     <input type="date" name="check-in" id="check-in"> 
      <label for="exit">Дата выезда:</label>
-     <input type="date" name="exit">
+     <input type="date" name="exit" id="exit">
      <label for="adult">Взрослые:</label>
-     <input type="range" name="adult" min="0" max="100" step="1">
+     <input type="number" name="adult" id="adult" min="0" max="100" step="1">
      <label for="child">Дети:</label>
-     <input type="range" name="child" min="0" max="100" step="1">
+     <input type="number" name="child" id="child" min="0" max="100" step="1">
      <input type="submit" name="search" value="Найти">
 
      </fieldset>
