@@ -30,34 +30,50 @@
         
     </header>
     <main>
-      <p> Инфраструктура: </p>
-        <ul>
-          <li> Бассейн </li>
-          <li> Парковка </li>
-          <li> Wi-Fi </li>
-        </ul>
-        <p> Тип жилья: </p>
-        <ul>
-          <li> Гостиница </li>
-          <li> Мотель </li>
-          <li> Апартаменты </li>
-        </ul>
-        <p> Стоимость в сутки (Р):</p>
-        <p> Показать </p>
+     <form method="get">
+     <fieldset>
+       <label> Инфраструктура: </label>
+        <input type="checkbox" name="infrastructure" value="pool" checked>Бассейн
+        <input type="checkbox" name="infrastructure" value="parking"> Парковка
+        <input type="checkbox" name="infrastructure" value="wifi"> Wi-Fi
+        
+       <label> Тип жилья: </label>
+       <input type="checkbox" name="type" id="hotel" value="hotel"checked> <label for="hotel">Гостиница</label>
+       
+       <input type="checkbox" name="type" id="motel" value="motel"checked> <label for="motel">Мотель</label>
+       <input type="checkbox" name="type" id="apartments" value="apartments"checked> <label for="apartments">Апартаменты</label>
+        
+        <label> Стоимость в сутки (Р):</label>
+        <input type="range" min="0" max="3000">
+        <input type="submit" value="Показать">
+      </fieldset>
+      <form method="get">
       <h2> Найдено: 3 </h2>
       <p> Сортировка: </p>
-      <ul>
-        <li> По цене </li>
-        <li> По типу </li>
-        <li> По типу </li>
-      </ul>
+      <div>
+        <input type="radio" id="price"
+        name="sort" value="price">
+       <label for="price">По цене</label>
+
+       <input type="radio" id="type"
+        name="sort" value="type">
+       <label for="type">По типу</label>
+        
+        <input type="radio" id="rating"
+        name="sort" value="rating">
+       <label for="rating">По рейтингу</label>
+       
+        
+       <label> <input type="radio" name="arrow" id="up"> <img src="images/up.png" alt="стрелка вверх"> </label>
+       <label> <input type="radio" name="arrow" id="down"> <img src="images/down.png" alt="стрелка вниз"> </label>
+      </div>
+      </form>
       <section>
         <ul>
           <li> Amara Resort & Spa <br> Гостиница От 4000 Р.
           <img src="images/Layer21.png"> 
          <button>Подробнее</button> <button>Забронировать</button>
-         <img src="images/Rect.png">
-         <img src="images/shape"> </li>
+        
           <li> Desert Quail Inn <br> Мотель От 3000 Р.
           <img src="images/Layer.png">
           <button>Подробнее</button> <button>Забронировать</button> 
@@ -72,7 +88,7 @@
         </ul>
         
         
-        
+     </form>  
       </section>
     </main>
     <footer>
