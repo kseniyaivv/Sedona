@@ -1,0 +1,32 @@
+html,
+body {
+  font-family: "PT Sans", "Arial", sans-serif; /* сменить на "Roboto", sans-serif */
+  color: black;
+  background-color: white;
+  margin:0;
+}
+ .navigation{
+display:grid;
+grid-template-columns: 1fr 50px;
+column-gap: 5px;
+
+}
+.navigation-list{
+display:flex;  
+justify-content: space-between;  
+margin:0;
+padding:0;
+}
+.navigation-link {
+    margin:5px;
+    padding:15px;
+}
+
+.welcome{
+  background-image:url("images\background_photo.png");
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 1200px;
+  height: 509px;
+}
