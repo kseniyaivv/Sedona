@@ -47,6 +47,8 @@ h2{
   line-height: 26px;
 }
 .first{
+  display:grid;
+  grid-template-columns:400px 800px ;
   background-image: url("/images/FON.png");
-
+  background-size:400px 256px;
 }
