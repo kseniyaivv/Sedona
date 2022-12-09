@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: "PT Sans", "Arial", sans-serif; /* сменить на "Roboto", sans-serif */
+  font-family: "PT Sans", "Roboto", sans-serif; /* сменить на "Roboto", sans-serif */
   color: black;
   background-color: white;
   margin:0;
@@ -14,8 +14,8 @@ column-gap: 5px;
 .navigation-list{
 display:flex;  
 justify-content: space-between;  
-margin:0;
-padding:0;
+margin: 0px;
+padding: 0px;
 }
 .navigation-link {
     margin:5px;
@@ -23,10 +23,30 @@ padding:0;
 }
 
 .welcome{
-  background-image:url("images\background_photo.png");
+  background-image:url("/images/background_photo.png");
   background-size: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 1200px;
-  height: 509px;
+  width: auto;
+ 
+}
+div img {
+  justify-content: center;
+
+}
+h2{
+  font-size:21px ;
+  text-align: center;
+}
+.five{
+  font-family: PT Sans;
+  color: rgba(51, 51, 51, 1);
+  font-style: Regular;
+  font-size: 14px ;
+  text-align: center;
+  line-height: 26px;
+}
+.first{
+  background-image: url("/images/FON.png");
+
 }
