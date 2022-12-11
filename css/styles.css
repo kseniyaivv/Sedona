@@ -3,7 +3,8 @@ body {
   font-family: "PT Sans", "Roboto", sans-serif; /* сменить на "Roboto", sans-serif */
   color: black;
   background-color: white;
-  margin:0;
+  margin: 40px;
+  width: 1200px;
 }
  .navigation{
 display:grid;
@@ -47,8 +48,28 @@ h2{
   line-height: 26px;
 }
 .first{
-  display:grid;
-  grid-template-columns:400px 800px ;
-  background-image: url("/images/FON.png");
-  background-size:400px 256px;
+  
+  position: relative;
+ background-color: rgba(129, 179, 210, 1);
+ text-align:left;
+ 
+
+}
+.fat{
+  font-size: 21px ;
+  
+}
+
+.two{
+  background-color: rgba(129, 179, 210, 1);
+  text-align:right;
+}
+
+fieldset{
+background-image:url("/images/map.png");
+background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 1199px; 
+  height: 594px;
 }
