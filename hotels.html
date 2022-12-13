@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>Hotels</title>
 </head>
 <body>
     <header>
-        <nav> 
-            <ul>
+        <nav class="navigation"> 
+            <ul class="navigation-list">
               <li>
               <a href="index.html"> Информация  </a> 
               </li>
@@ -31,7 +36,8 @@
     </header>
     <main>
      <form method="get">
-     <fieldset>
+    <div class="ks">
+     <fieldset class="filter">
        <label> Инфраструктура: </label>
         <input type="checkbox" name="infrastructure" value="pool" checked>Бассейн
         <input type="checkbox" name="infrastructure" value="parking"> Парковка
@@ -47,6 +53,8 @@
         <input type="range" min="0" max="3000">
         <input type="submit" value="Показать">
       </fieldset>
+    </div>
+       </form>
       <form method="get">
       <h2> Найдено: 3 </h2>
       <p> Сортировка: </p>

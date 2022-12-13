@@ -65,11 +65,26 @@ h2{
   text-align:right;
 }
 
-fieldset{
+.booking{
 background-image:url("/images/map.png");
 background-size: no-repeat;
   background-position: center;
   background-size: cover;
   width: 1199px; 
   height: 594px;
+}
+.ks{
+  background-image:url("/images/background_photo.png");
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height:217px;
+  position: absolute;
+  backdrop-filter: url(commonfilters.svg#filter) blur(4px) saturate(10%);
+  
+}
+.filter{
+  position:relative;
+ 
 }
