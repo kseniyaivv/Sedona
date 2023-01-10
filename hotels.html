@@ -1,113 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
     <title>Hotels</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navigation"> 
-            <ul class="navigation-list">
-              <li>
-              <a href="index.html"> Информация  </a> 
-              </li>
-              <li>
-              <a href="#"> Фото и видео </a>
-              </li>
-              
-              <li>
-              <a href="#"> Карта штата </a>
-              </li>
-              <li> 
-              <a href="#"> Гостиницы </a>
-              </li>
-            </ul>
-            <img src="images/logo.png" width="138" height="70" alt="ЛОГОТИП">
-            
-        </nav>
-        
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li>
+            <a class="navigation-link" href="index.html"> Информация </a>
+          </li>
+          <li>
+            <a class="navigation-link" href="#"> Фото и видео </a>
+          </li>
+
+          <li>
+            <a class="navigation-link" href="#"> Карта штата </a>
+          </li>
+          <li>
+            <a class="navigation-link active" href="#"> Гостиницы </a>
+          </li>
+        </ul>
+        <img src="images/logo.png" width="138" height="70" alt="ЛОГОТИП" />
+      </nav>
     </header>
     <main>
-     <form method="get">
-    <div class="ks">
-     <fieldset class="filter">
-       <label> Инфраструктура: </label>
-        <input type="checkbox" name="infrastructure" value="pool" checked>Бассейн
-        <input type="checkbox" name="infrastructure" value="parking"> Парковка
-        <input type="checkbox" name="infrastructure" value="wifi"> Wi-Fi
-        
-       <label> Тип жилья: </label>
-       <input type="checkbox" name="type" id="hotel" value="hotel"checked> <label for="hotel">Гостиница</label>
-       
-       <input type="checkbox" name="type" id="motel" value="motel"checked> <label for="motel">Мотель</label>
-       <input type="checkbox" name="type" id="apartments" value="apartments"checked> <label for="apartments">Апартаменты</label>
-        
-        <label> Стоимость в сутки (Р):</label>
-        <input type="range" min="0" max="3000">
-        <input type="submit" value="Показать">
-      </fieldset>
-    </div>
-       </form>
       <form method="get">
-      <h2> Найдено: 3 </h2>
-      <p> Сортировка: </p>
-      <div>
-        <input type="radio" id="price"
-        name="sort" value="price">
-       <label for="price">По цене</label>
+        <div class="wrapper-filter">
+          <fieldset class="filter">
+            <label> Инфраструктура: </label>
+            <input
+              type="checkbox"
+              name="infrastructure"
+              value="pool"
+              checked
+            />Бассейн
+            <input type="checkbox" name="infrastructure" value="parking" />
+            Парковка
+            <input type="checkbox" name="infrastructure" value="wifi" /> Wi-Fi
 
-       <input type="radio" id="type"
-        name="sort" value="type">
-       <label for="type">По типу</label>
-        
-        <input type="radio" id="rating"
-        name="sort" value="rating">
-       <label for="rating">По рейтингу</label>
-       
-        
-       <label> <input type="radio" name="arrow" id="up"> <img src="images/up.png" alt="стрелка вверх"> </label>
-       <label> <input type="radio" name="arrow" id="down"> <img src="images/down.png" alt="стрелка вниз"> </label>
-      </div>
+            <label> Тип жилья: </label>
+            <input
+              type="checkbox"
+              name="type"
+              id="hotel"
+              value="hotel"
+              checked
+            />
+            <label for="hotel">Гостиница</label>
+
+            <input
+              type="checkbox"
+              name="type"
+              id="motel"
+              value="motel"
+              checked
+            />
+            <label for="motel">Мотель</label>
+            <input
+              type="checkbox"
+              name="type"
+              id="apartments"
+              value="apartments"
+              checked
+            />
+            <label for="apartments">Апартаменты</label>
+
+            <label> Стоимость в сутки (Р):</label>
+            <input type="range" min="0" max="3000" />
+            <input type="submit" value="Показать" />
+          </fieldset>
+        </div>
+      </form>
+      <form method="get">
+        <h2 class="tittle">Найдено: 3</h2>
+        <p>Сортировка:</p>
+        <div>
+          <input type="radio" id="price" name="sort" value="price" />
+          <label for="price">По цене</label>
+
+          <input type="radio" id="type" name="sort" value="type" />
+          <label for="type">По типу</label>
+
+          <input type="radio" id="rating" name="sort" value="rating" />
+          <label for="rating">По рейтингу</label>
+
+          <label>
+            <input type="radio" name="arrow" id="up" />
+            <img src="images/up.png" alt="стрелка вверх" />
+          </label>
+          <label>
+            <input type="radio" name="arrow" id="down" />
+            <img src="images/down.png" alt="стрелка вниз" />
+          </label>
+        </div>
       </form>
       <section>
         <ul>
-          <li> Amara Resort & Spa <br> Гостиница От 4000 Р.
-          <img src="images/Layer21.png"> 
-         <button>Подробнее</button> <button>Забронировать</button>
-        
-          <li> Desert Quail Inn <br> Мотель От 3000 Р.
-          <img src="images/Layer.png">
-          <button>Подробнее</button> <button>Забронировать</button> 
-          <img src="images/Rect.png"> 
-          <img src="images/shape"> </li>
-          <li> Villas at Poco Diablo <br> Апартаменты От 3000 Р.
-          <img src="images/Rectangle.png"> 
-          <button>Подробнее</button> <button>Забронировать</button>
-          <img src="images/Rect.png">
-          <img src="images/shape"> </li>
-              
+          <li class="tittle">
+            Amara Resort & Spa Гостиница От 4000 Р.
+            <img src="images/Layer21.png" />
+            <button>Подробнее</button> <button>Забронировать</button>
+          </li>
+
+          <li class="tittle">
+            Desert Quail Inn Мотель От 3000 Р.
+            <img src="images/Layer.png" />
+            <button>Подробнее</button> <button>Забронировать</button>
+
+            <img src="images/shape" />
+          </li>
+          <li class="tittle">
+            Villas at Poco Diablo Апартаменты От 3000 Р.
+            <img src="images/Rectangle.png" />
+            <button>Подробнее</button> <button>Забронировать</button>
+
+            <img src="images/shape" />
+          </li>
         </ul>
-        
-        
-     </form>  
       </section>
     </main>
     <footer>
-      <p> #visitSEDONA </p>
+      <p>#visitSEDONA</p>
       <a href="#"> ТЕЛ: +7(495) 666-01-66 </a>
-      <a href="#"> <img src="images/twitter.png" alt="twitter"> </a>
-      <a href="#"> <img src="images/fb-icon.png" alt="Fasebook"> </a> 
-      <a href="#"> <img src="images/youtube.png" alt="Youtube"> </a>
-      <p> Website by </p> 
-      <a href="#"> <img src="images/logo-htmlacademy.png"> </a>
-        
+      <a href="#"> <img src="images/twitter.png" alt="twitter" /> </a>
+      <a href="#"> <img src="images/fb-icon.png" alt="Fasebook" /> </a>
+      <a href="#"> <img src="images/youtube.png" alt="Youtube" /> </a>
+      <p>Website by</p>
+      <a href="#"> <img src="images/logo-htmlacademy.png" /> </a>
     </footer>
-</body>
+  </body>
 </html>

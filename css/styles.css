@@ -7,11 +7,13 @@ body {
   width: 1200px;
   font-weight: 400;
   background-color: #888888;
+  text-transform: uppercase;
 }
 .container {
   background-color: #ffff;
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
 }
 .navigation {
   list-style: none;
@@ -28,12 +30,6 @@ body {
   justify-content: space-between;
   margin: 0px;
   padding: 0px;
-  text-transform: uppercase;
-}
-
-.navigation-link {
-  margin: 5px;
-  padding: 15px;
 }
 
 a.navigation-link {
@@ -72,7 +68,6 @@ a.navigation-link {
 .welcome img {
   width: 456px;
   max-width: 60%;
-  
 }
 .preview {
   line-height: 26px;
@@ -82,17 +77,17 @@ a.navigation-link {
   line-height: 26px;
   font-size: 21px;
   color: #000000;
+  font-weight: 700px;
 }
 
 .reason-tittle {
   font-size: 21px;
 }
 
-.reasons {
-  font-family: PT Sans;
-  color: rgba(51, 51, 51, 1);
+.preview-reasons {
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
-  text-align: center;
   line-height: 26px;
 }
 
@@ -111,26 +106,32 @@ a.navigation-link {
   text-align: right;
 }
 
+.search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+  color: #000000;
+}
 .booking {
-  background-image: url("/images/map.png");
-  background-size: no-repeat;
+  background-image: url("../images/map.png");
   background-position: center;
-  background-size: cover;
-  width: 1199px;
+  width: auto;
   height: 594px;
 }
 
-.ks {
-  background-image: url(/images/background_photo.png);
-  background-size: no-repeat;
+.wrapper-filter{
+  background-image: url("../images/background-blur.png");
   background-position: center;
-  background-size: cover;
   width: auto;
   height: 217px;
   position: absolute;
-  backdrop-filter: url(commonfilters.svg#filter) blur(4px) saturate(10%);
+ margin:0;
 }
 
-.filter {
-  position: relative;
+.filter{
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 21px;
+color:#ffff;
 }
