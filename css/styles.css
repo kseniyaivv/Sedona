@@ -1,0 +1,137 @@
+html,
+body {
+  font-family: "PT Sans", "Roboto", sans-serif; /* сменить на "Roboto", sans-serif */
+  color: #333333;
+  font-size: 14px;
+  line-height: 21px;
+  width: 1200px;
+  font-weight: 400;
+  background-color: #888888;
+  text-transform: uppercase;
+}
+.container {
+  background-color: #ffff;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  column-gap: 5px;
+}
+
+.navigation-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+a.navigation-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-link.active {
+  color: #766357;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.welcome {
+  height: auto;
+  background-image: url("../images/background_photo.png");
+  background-position: center;
+  background-size: cover;
+  padding-top: 77px;
+  padding-bottom: 80px;
+}
+
+.welcome img {
+  width: 456px;
+  max-width: 60%;
+}
+.preview {
+  line-height: 26px;
+}
+
+.tittle {
+  line-height: 26px;
+  font-size: 21px;
+  color: #000000;
+  font-weight: 700px;
+}
+
+.reason-tittle {
+  font-size: 21px;
+}
+
+.preview-reasons {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.first {
+  position: relative;
+  background-color: rgba(129, 179, 210, 1);
+  text-align: left;
+}
+
+.fat {
+  font-size: 21px;
+}
+
+.two {
+  background-color: rgba(129, 179, 210, 1);
+  text-align: right;
+}
+
+.search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+  color: #000000;
+}
+.booking {
+  background-image: url("../images/map.png");
+  background-position: center;
+  width: auto;
+  height: 594px;
+}
+
+.wrapper-filter{
+  background-image: url("../images/background-blur.png");
+  background-position: center;
+  width: auto;
+  height: 217px;
+  position: absolute;
+ margin:0;
+}
+
+.filter{
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 21px;
+color:#ffff;
+}
