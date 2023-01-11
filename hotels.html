@@ -20,7 +20,9 @@
     <title>Hotels</title>
   </head>
   <body>
+    <div class="fon-page">
     <header>
+      
       <nav class="navigation">
         <ul class="navigation-list">
           <li>
@@ -92,14 +94,14 @@
         <h2 class="tittle">Найдено: 3</h2>
         <p>Сортировка:</p>
         <div>
-          <input type="radio" id="price" name="sort" value="price" />
+          <input class="sorting" type="radio" id="price" name="sort" value="price" />
           <label for="price">По цене</label>
 
-          <input type="radio" id="type" name="sort" value="type" />
+          <input class="sorting" type="radio" id="type" name="sort" value="type" />
           <label for="type">По типу</label>
 
-          <input type="radio" id="rating" name="sort" value="rating" />
-          <label for="rating">По рейтингу</label>
+          <input class="sorting"  type="radio" id="rating" name="sort" value="rating" />
+          <label  for="rating">По рейтингу</label>
 
           <label>
             <input type="radio" name="arrow" id="up" />
@@ -112,26 +114,28 @@
         </div>
       </form>
       <section>
-        <ul>
-          <li class="tittle">
-            Amara Resort & Spa Гостиница От 4000 Р.
+        <ul  class="results">
+          <li>
+            Amara Resort & Spa <p class="description-result"> Гостиница От 4000 Р.</p>
             <img src="images/Layer21.png" />
             <button>Подробнее</button> <button>Забронировать</button>
+            <img src="images/Shape(2).png" /> <p class="rating-result">Рейтинг: 8,5</p>
           </li>
 
-          <li class="tittle">
-            Desert Quail Inn Мотель От 3000 Р.
+          <li>
+            Desert Quail Inn <p class="description-result">Мотель От 3000 Р.</p>
             <img src="images/Layer.png" />
             <button>Подробнее</button> <button>Забронировать</button>
 
-            <img src="images/shape" />
+            <img src="images/Shape(2).png" /> <p class="rating-result">Рейтинг: 8,9</p>
+            
           </li>
-          <li class="tittle">
-            Villas at Poco Diablo Апартаменты От 3000 Р.
+          <li>
+            Villas at Poco Diablo <p class="description-result">Апартаменты От 3000 Р.</p>
             <img src="images/Rectangle.png" />
             <button>Подробнее</button> <button>Забронировать</button>
 
-            <img src="images/shape" />
+            <img src="images/Shape(2).png" /> <p class="rating-result">Рейтинг: 9,2</p>
           </li>
         </ul>
       </section>
@@ -145,5 +149,6 @@
       <p>Website by</p>
       <a href="#"> <img src="images/logo-htmlacademy.png" /> </a>
     </footer>
+    </div>
   </body>
 </html>
