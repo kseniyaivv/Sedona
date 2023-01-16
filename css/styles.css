@@ -4,7 +4,6 @@ body {
   color: #333333;
   font-size: 14px;
   line-height: 21px;
-  width: 1200px;
   font-weight: 400;
   background-color: #888888;
   text-transform: uppercase;
@@ -60,7 +59,6 @@ a.navigation-link {
   height: auto;
   background-image: url("../images/background_photo.png");
   background-position: center;
-  background-size: cover;
   padding-top: 77px;
   padding-bottom: 80px;
 }
@@ -77,11 +75,11 @@ a.navigation-link {
   line-height: 26px;
   font-size: 21px;
   color: #000000;
-  font-weight: 700px;
+  font-weight: 700;
 }
 
 .reason-tittle {
-  font-size: 21px;
+  line-height: 21px;
 }
 
 .preview-reasons {
@@ -112,6 +110,12 @@ a.navigation-link {
   line-height: 24px;
   color: #000000;
 }
+
+.house{
+  background-image: url("../images/icon-1.png");
+  background-repeat: no-repeat;
+  
+}
 .booking {
   background-image: url("../images/map.png");
   background-position: center;
@@ -122,9 +126,10 @@ a.navigation-link {
 .wrapper-filter{
   background-image: url("../images/background-blur.png");
   background-position: center;
-  width: auto;
   height: 217px;
  margin:0;
+ background-repeat: no-repeat;
+ 
 }
 
 .filter{
@@ -142,18 +147,17 @@ color:#ffff;
   font-weight: Bold; 
 }
 
-.description-result{
-  font-weight: 400;
+.description-result {
   font-size: 14px;
   line-height: 21px;
-  color:#333333
+  color:#333333; 
 }
 
 .rating-result{
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color:#333333
+  color:#333333;
 }
 .fon-page{
   background-color: #ffff;
@@ -164,4 +168,12 @@ color:#ffff;
   font-size: 12px;
   line-height: 18px;
   color:#000000  
+}
+ul{
+  list-style: none;
+}
+.variants-filter {
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
 }
