@@ -20,7 +20,8 @@
     <title>Hotels</title>
   </head>
   <body>
-    <div class="fon-page container ">
+    <div class="container"> 
+     <div class="fon-page container ">
       <header>
         <nav class="navigation">
           <ul class="navigation-list">
@@ -45,18 +46,20 @@
         <form method="get">
           <div class="wrapper-filter">
             <fieldset class="filter">
-              <label> Инфраструктура: </label>
+              <h4> Инфраструктура: </h4>
               <input 
                 type="checkbox"
                 name="infrastructure"
                 value="pool"
+                id="pool"
                 checked
-              />Бассейн
-              <input  type="checkbox" name="infrastructure" value="parking" />
-              Парковка
-              <input class="variants-filter" type="checkbox" name="infrastructure" value="wifi" /> Wi-Fi
+              />
+              <label for="pool">Бассейн</label>
+              <input  type="checkbox" name="infrastructure" value="parking" id="parking"/>
+              <label for="parking"> Парковка </label>
+              <input class="variants-filter" type="checkbox" name="infrastructure" value="wifi" id="wifi" /> <label for="wifi">Wi-Fi</label>
 
-              <label> Тип жилья: </label>
+              <h4> Тип жилья: </h4>
               <input 
                 type="checkbox"
                 name="type"
@@ -72,6 +75,7 @@
                 id="motel"
                 value="motel"
                 checked
+            
               />
               <label for="motel">Мотель</label>
               <input 
@@ -83,7 +87,7 @@
               />
               <label for="apartments">Апартаменты</label>
 
-              <label> Стоимость в сутки (Р):</label>
+              <h4> Стоимость в сутки (Р):</h4>
               <input type="range" min="0" max="3000" />
               <input type="submit" value="Показать" />
             </fieldset>
@@ -153,6 +157,7 @@
         <p>Website by</p>
         <a href="#"> <img src="images/logo-htmlacademy.png" /> </a>
       </footer>
+     </div>
     </div>
   </body>
 </html>

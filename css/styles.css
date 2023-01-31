@@ -111,6 +111,14 @@ a.navigation-link {
   color: #000000;
 }
 
+.search-hotel{
+  font-weight: 700;
+  font-size: 21px;
+ line-height: 26px;
+ color:#FFFFFF;
+ background: #766357;
+}
+
 .house{
   background-image: url("../images/icon-1.png");
   background-repeat: no-repeat;
@@ -121,23 +129,34 @@ a.navigation-link {
   background-position: center;
   width: auto;
   height: 594px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
 }
 
+input[type=submit]{
+  background: #81B3D2;
+  color: #FFFFFF;
+  font-weight: 700;
+font-size: 21px;
+line-height: 26px;
+}
 .wrapper-filter{
+  display: flex;
   background-image: url("../images/background-blur.png");
   background-position: center;
-  height: 217px;
+  height: auto;
  margin:0;
  background-repeat: no-repeat;
  
 }
 
 .filter{
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 21px;
-color:#ffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color:#FFFFFF;
 }
 
 .results{
@@ -176,4 +195,11 @@ ul{
 font-weight: 400;
 font-size: 14px;
 line-height: 21px;
+}
+h4 {
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 21px;
+color:#FFFFFF;
 }

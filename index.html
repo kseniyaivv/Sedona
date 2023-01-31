@@ -7,18 +7,6 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@100&display=swap"
-      rel="stylesheet"
-    />
     <title>Sedona</title>
   </head>
   <body>
@@ -56,12 +44,14 @@
       </div>
       <h1 class="visually-hidden">Официальный сайт города Седона</h1>
       <section class="reasons">
-        <div class="preview">
+        <div class="preview"> 
+
           <h3 class="tittle">Седона — небольшой городок в Аризоне,заслуживающий большего!</h3>
           <p class="preview-reasons">
             Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
           </p>
         </div>
+        
 
         <ul>
           <li class="first">
@@ -137,8 +127,8 @@
         
         <form method="post">
           <fieldset class="booking">
-            <button>ПОИСК ГОСТИНИЦЫ В седоне</button>
-            <label for="check-in">Дата заезда:</label>
+            <button class="search-hotel">ПОИСК ГОСТИНИЦЫ В седоне</button>
+            <label  for="check-in">Дата заезда:</label>
             <input
               type="date"
               name="check-in"
@@ -166,7 +156,8 @@
               max="100"
               step="1"
             />
-            <input type="submit" name="search" value="Найти" />
+            <input type="submit" name="search" id="search" value="Найти" />
+
           </fieldset>
         </form>
       </section>
