@@ -5,7 +5,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  background-color: #888888;
+  background-color: #F2F2F2;
   text-transform: uppercase;
 }
 .container {
@@ -61,6 +61,7 @@ a.navigation-link {
   background-position: center;
   padding-top: 77px;
   padding-bottom: 80px;
+  background-repeat:no-repeat;
 }
 
 .welcome img {
@@ -134,21 +135,49 @@ a.navigation-link {
   line-height: 26px;
 }
 
-input[type=submit]{
+.button-search{
   background: #81B3D2;
   color: #FFFFFF;
   font-weight: 700;
 font-size: 21px;
 line-height: 26px;
 }
+
+.filter-data,
+.filter-exit,
+.filter-child,
+.filter-adult
+{
+  font-weight: 700;
+font-size: 14px;
+line-height: 26px;
+}
+
+/* .filter-exit{ 
+font-weight: 700;
+font-size: 14px;
+  line-height: 26px;
+}
+
+.filter-child {
+font-weight: 700;
+font-size: 14px;
+line-height: 26px;
+}
+
+.filter-adult{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  /* } */
+
 .wrapper-filter{
-  display: flex;
   background-image: url("../images/background-blur.png");
   background-position: center;
   height: auto;
  margin:0;
  background-repeat: no-repeat;
- 
+ width: 1200px;
 }
 
 .filter{
@@ -163,13 +192,14 @@ line-height: 26px;
   line-height: 26px;
   font-size: 21px;
   color: #000000;
-  font-weight: Bold; 
+  font-weight: 700; 
 }
 
 .description-result {
   font-size: 14px;
   line-height: 21px;
   color:#333333; 
+  font-weight: 400;
 }
 
 .rating-result{
@@ -202,4 +232,20 @@ font-weight: 700;
 font-size: 16px;
 line-height: 21px;
 color:#FFFFFF;
+}
+
+.button-detail {
+  background: #81B3D2;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.button-booking {
+  background: #766357;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
 }

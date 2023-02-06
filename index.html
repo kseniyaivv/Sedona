@@ -130,15 +130,17 @@
             <button class="search-hotel">ПОИСК ГОСТИНИЦЫ В седоне</button>
             <label  for="check-in">Дата заезда:</label>
             <input
+            class="filter-data"
               type="date"
               name="check-in"
               id="check-in"
               value="2017-04-22"
             />
             <label for="exit">Дата выезда:</label>
-            <input type="date" name="exit" id="exit" value="2017-07-04" />
+            <input class="filter-exit" type="date" name="exit" id="exit" value="2017-07-04" />
             <label for="adult">Взрослые:</label>
             <input
+              class="filter-adult"
               type="number"
               name="adult"
               id="adult"
@@ -149,6 +151,7 @@
             />
             <label for="child">Дети:</label>
             <input
+             class="filter-child"
               type="number"
               name="child"
               id="child"
@@ -156,7 +159,7 @@
               max="100"
               step="1"
             />
-            <input type="submit" name="search" id="search" value="Найти" />
+            <input class="button-search" type="submit" name="search" id="search" value="Найти" />
 
           </fieldset>
         </form>
