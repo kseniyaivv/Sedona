@@ -179,6 +179,9 @@ line-height: 26px;
  background-repeat: no-repeat;
  width: 1200px;
 }
+.input-show{
+  background-color: transparent;
+}
 
 .filter{
   font-style: normal;
