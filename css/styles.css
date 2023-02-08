@@ -1,0 +1,254 @@
+html,
+body {
+  font-family: "PT Sans", "Roboto", sans-serif; /* сменить на "Roboto", sans-serif */
+  color: #333333;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  background-color: #F2F2F2;
+  text-transform: uppercase;
+}
+.container {
+  background-color: #ffff;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  column-gap: 5px;
+}
+
+.navigation-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+a.navigation-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-link.active {
+  color: #766357;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.welcome {
+  height: auto;
+  background-image: url("../images/background_photo.png");
+  background-position: center;
+  padding-top: 77px;
+  padding-bottom: 80px;
+  background-repeat:no-repeat;
+}
+
+.welcome img {
+  width: 456px;
+  max-width: 60%;
+}
+.preview {
+  line-height: 26px;
+}
+
+.tittle {
+  line-height: 26px;
+  font-size: 21px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.reason-tittle {
+  line-height: 21px;
+}
+
+.preview-reasons {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.first {
+  position: relative;
+  background-color: rgba(129, 179, 210, 1);
+  text-align: left;
+}
+
+.fat {
+  font-size: 21px;
+}
+
+.two {
+  background-color: rgba(129, 179, 210, 1);
+  text-align: right;
+}
+
+.search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.search-hotel{
+  font-weight: 700;
+  font-size: 21px;
+ line-height: 26px;
+ color:#FFFFFF;
+ background: #766357;
+}
+
+.house{
+  background-image: url("../images/icon-1.png");
+  background-repeat: no-repeat;
+  
+}
+.booking {
+  background-image: url("../images/map.png");
+  background-position: center;
+  width: auto;
+  height: 594px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.button-search{
+  background: #81B3D2;
+  color: #FFFFFF;
+  font-weight: 700;
+font-size: 21px;
+line-height: 26px;
+}
+
+.filter-data,
+.filter-exit,
+.filter-child,
+.filter-adult
+{
+  font-weight: 700;
+font-size: 14px;
+line-height: 26px;
+}
+
+/* .filter-exit{ 
+font-weight: 700;
+font-size: 14px;
+  line-height: 26px;
+}
+
+.filter-child {
+font-weight: 700;
+font-size: 14px;
+line-height: 26px;
+}
+
+.filter-adult{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  /* } */
+
+.wrapper-filter{
+  background-image: url("../images/background-blur.png");
+  background-position: center;
+  height: auto;
+ margin:0;
+ background-repeat: no-repeat;
+ width: 1200px;
+}
+.input-show{
+  background-color: transparent;
+}
+
+.filter{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color:#FFFFFF;
+}
+
+.results{
+  line-height: 26px;
+  font-size: 21px;
+  color: #000000;
+  font-weight: 700; 
+}
+
+.description-result {
+  font-size: 14px;
+  line-height: 21px;
+  color:#333333; 
+  font-weight: 400;
+}
+
+.rating-result{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color:#333333;
+}
+.fon-page{
+  background-color: #ffff;
+}
+
+.sorting{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color:#000000  
+}
+ul{
+  list-style: none;
+}
+.variants-filter {
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+}
+h4 {
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 21px;
+color:#FFFFFF;
+}
+
+.button-detail {
+  background: #81B3D2;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.button-booking {
+  background: #766357;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
