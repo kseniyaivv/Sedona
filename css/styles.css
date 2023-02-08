@@ -252,3 +252,9 @@ color:#FFFFFF;
   line-height: 21px;
   color: #FFFFFF;
 }
+
+button,
+input{
+border: none;
+text-transform: uppercase; 
+}
