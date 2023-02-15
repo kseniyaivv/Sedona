@@ -7,6 +7,7 @@ body {
   font-weight: 400;
   background-color: #F2F2F2;
   text-transform: uppercase;
+  margin: 0;
 }
 .container {
   background-color: #ffff;
@@ -19,15 +20,17 @@ body {
   margin: 0;
   display: flex;
   flex-flow:row nowrap;
-  height: 56px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   width:100%;
 
 }
 .logo{
+  top: 0;
   position: absolute;
-  margin-right: 531px;
-  margin-left: 531px;
-  order: 1;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .navigation-list {
@@ -93,7 +96,7 @@ a.navigation-link {
   width:100%;
   height: 57px;
   position: absolute;
-  margin-top: 453px;
+ bottom: 0;
 }
 .preview {
   line-height: 26px;
@@ -103,11 +106,6 @@ a.navigation-link {
   flex-direction:column;
   padding-top: 42px;
   padding-bottom: 51px;
-}
-
-.first,
-.two {
-  display: flex;
 }
 
 .recomendation{
@@ -134,7 +132,16 @@ a.navigation-link {
   line-height: 26px;
 }
 
+.reason,
+.tittle.reason-tittle{
+  color: #F2F2F2;
+  align-items: center;
+text-align: center;
+/* padding-top: 47px; */
+}
+
 .first {
+  display: flex;
   position: relative;
   background-color: rgba(129, 179, 210, 1);
   text-align: left;
@@ -145,6 +152,8 @@ a.navigation-link {
 }
 
 .two {
+  display: flex;
+  flex-direction:row-reverse ;
   background-color: rgba(129, 179, 210, 1);
   text-align: right;
 }
@@ -197,23 +206,6 @@ font-size: 14px;
 line-height: 26px;
 }
 
-/* .filter-exit{ 
-font-weight: 700;
-font-size: 14px;
-  line-height: 26px;
-}
-
-.filter-child {
-font-weight: 700;
-font-size: 14px;
-line-height: 26px;
-}
-
-.filter-adult{
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 26px;
-  /* } */
 
 .wrapper-filter{
   background-image: url("../images/background-blur.png");
@@ -267,6 +259,7 @@ line-height: 26px;
 }
 ul{
   list-style: none;
+  padding: 0;
 }
 .variants-filter {
 font-weight: 400;
