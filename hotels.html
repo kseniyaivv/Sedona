@@ -35,6 +35,7 @@
         <form method="get">
           <div class="wrapper-filter">
             <fieldset class="filter">
+              <fieldset class="infrastructure">
               <h4> Инфраструктура: </h4>
               <input 
                 type="checkbox"
@@ -47,7 +48,8 @@
               <input  type="checkbox" name="infrastructure" value="parking" id="parking"/>
               <label for="parking"> Парковка </label>
               <input class="variants-filter" type="checkbox" name="infrastructure" value="wifi" id="wifi" /> <label for="wifi">Wi-Fi</label>
-
+            </fieldset>
+            <fieldset class="typeofhouse">
               <h4> Тип жилья: </h4>
               <input 
                 type="checkbox"
@@ -75,10 +77,12 @@
                 checked
               />
               <label for="apartments">Апартаменты</label>
-
+            </fieldset>
+            <fieldset class="price">
               <h4> Стоимость в сутки (Р):</h4>
               <input type="range" min="0" max="3000" />
               <input class="input-show" type="submit" value="Показать" />
+            </fieldset>
             </fieldset>
           </div>
         </form>
@@ -138,13 +142,19 @@
         </section>
       </main>
       <footer>
+        <fieldset class="number">
         <p class="tittle">#visitSEDONA</p>
         <a  class="tittle" href="#"> ТЕЛ: +7(495) 666-01-66 </a>
+        </fieldset>
+        <fieldset class="soc">
         <a href="#"> <img src="images/twitter.png" alt="twitter" /> </a>
         <a href="#"> <img src="images/fb-icon.png" alt="Fasebook" /> </a>
         <a href="#"> <img src="images/youtube.png" alt="Youtube" /> </a>
+      </fieldset>
+      <fieldset class="site">
         <p>Website by</p>
         <a href="#"> <img src="images/logo-htmlacademy.png" /> </a>
+      </fieldset>
       </footer>
      </div>
     </div>
