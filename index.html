@@ -125,18 +125,18 @@
         <!-- <img src="images/icon-3.png" /> -->
         </div>
       </section>
-      <section class="hotel-search">
+      <section class="hotel-search-section">
         <div class="interesting">
          <h4 class="search-title">  Заинтересовались? </h4>
          <p>Укажите предполагаемые даты поездки, и мы покажем
           вам лучшие предложения гостиниц в седоне</p>
-        
-         
-         <form action="https://echo.htmlacademy.ru/courses" method="post">
-          <fieldset class="booking">
-          <div class="search-filter">
             <button class="search-hotel">ПОИСК ГОСТИНИЦЫ В седоне</button>
-            <label  for="check-in">Дата заезда:</label>
+        </div>
+      </section>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <fieldset class="booking">
+            <div class="search-filter">
+            <div class="dataon"><label  for="check-in">Дата заезда:</label>
             <input
             class="filter-data"
               type="date"
@@ -144,9 +144,11 @@
               id="check-in"
               value="2017-04-22"
             />
-            <label for="exit">Дата выезда:</label>
+          </div>
+           <div class="dataex"><label for="exit">Дата выезда:</label>
             <input class="filter-exit" type="date" name="exit" id="exit" value="2017-07-04" />
-            <label for="adult">Взрослые:</label>
+          </div> 
+            <div class="ad"> <label for="adult">Взрослые:</label>
             <input
               class="filter-adult"
               type="number"
@@ -157,6 +159,7 @@
               max="100"
               step="1"
             />
+           
             <label for="child">Дети:</label>
             <input
              class="filter-child"
@@ -167,13 +170,14 @@
               max="100"
               step="1"
             />
+          </div>
             <input class="button-search" type="submit" name="search" id="search" value="Найти" />
           </div>
-          </div>
+          
 
           </fieldset>
         </form>
-      </section>
+      
     </main>
     <footer>
       <fieldset class="number">

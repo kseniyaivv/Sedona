@@ -188,8 +188,11 @@ padding-top: 47px;
  background: #766357;
  height: 86px;
  padding: 0;
-
+max-width: 568px;
+width: 100%;
 }
+
+
 .filter-data{
   width: 346px;
 }
@@ -197,46 +200,50 @@ padding-top: 47px;
 .house{
   background-image: url("../images/icon-1.png");
   background-repeat: no-repeat;
-  
+  /* margin-top: 30px;
+  padding-bottom: 30px; */
+  background-position: top;
 }
 
 .eat{
   background-image: url("../images/icon-2.png");
   background-repeat: no-repeat;
+  background-position: top;
 }
 
 .souv {
   background-image: url("../images/icon-3.png");
   background-repeat: no-repeat;
+  background-position: top;
 }
+
 .search-filter {
 display: flex;
 flex-direction:column;
 max-width: 568px;
 width: 100%;
 height: 395px;
-padding: 55px;
+padding:0px;
 margin:0 auto;
-background-position: center;
+/* background-position: center; */
 font-weight: 700;
 font-size: 14px;
 line-height: 26px;
 background-color: #FFFFFF;
+transform: translate(-50% 100%);
+border:none ;
+position: relative;
 
 }
 
 .booking{
   background-image: url("../images/map.png");
-  position: absolute;
+  position: relative;
   z-index: 1;
-  left: 50%;
-  transform: translateX(-50%);
-  border:none ;
   width:100%;
-  max-width: 1200px;
-  padding: 0;
+ padding: 0;
   filter: drop-shadow(0 7px 15px rgba(0, 1, 1, 0.15));
-
+  border:none;
 }
 
 .button-search{
@@ -251,7 +258,8 @@ position: center;
 padding:0;
 margin-left: 55px;
 margin-right: 55px;
-
+margin-bottom: 55px;
+margin-top: 40px;
 }
 
 .filter-data,
@@ -262,6 +270,15 @@ margin-right: 55px;
   font-weight: 700;
 font-size: 14px;
 line-height: 26px;
+
+}
+.dataon,
+.dataex,
+.ad {
+  margin-left: 55px;
+  margin-right: 55px;
+padding-top:55px;
+
 }
 
 
@@ -269,7 +286,7 @@ line-height: 26px;
 .wrapper-filter{
   background-image: url("../images/background-blur.png");
   background-position: center;
-   height: 217px; 
+   /* height: 217px;  */
  margin:0;
  background-repeat: no-repeat;
  width: 1200px;
@@ -281,7 +298,8 @@ line-height: 26px;
 
 .filter{
   display: flex;
-
+  flex-wrap: wrap;
+  
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -289,6 +307,12 @@ line-height: 26px;
   color:#FFFFFF;
 }
 
+.infrastrukture,
+.typeofhouse{
+width: 100%;
+widht-max:531px;
+}
+  
 .results{
   line-height: 26px;
   font-size: 21px;
@@ -374,7 +398,6 @@ background-color: #EEEEEE;
 .interesting{
 display: flex;
 flex-direction:column;
-/* width: 435px; */
 align-items: center;
 text-align: center;
 text-transform: uppercase;
