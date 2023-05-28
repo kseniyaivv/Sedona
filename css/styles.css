@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: "PT Sans", "Roboto", sans-serif; /* сменить на "Roboto", sans-serif */
+  font-family:"PT Sans", "Roboto", sans-serif; /* сменить на "Roboto", sans-serif */
   color: #333333;
   font-size: 14px;
   line-height: 21px;
@@ -15,16 +15,21 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .navigation {
   list-style: none;
   margin: 0;
+  padding: 0;
   display: flex;
   flex-flow:row nowrap;
   padding-top: 15px;
   padding-bottom: 15px;
   width:100%;
-
+ 
 }
+
+
+
 .logo{
   top: 0;
   position: absolute;
@@ -35,28 +40,62 @@ body {
 
 .navigation-list {
   list-style: none;
-  display: flex;
+  display:flex;
+flex-direction: row;
   width: 100%; 
   margin: 0px;
   padding: 0px;
   position: relative;
   flex-wrap: wrap;
-  justify-content:space-around;
   align-items: center;
-  
+  /* justify-content: space-between; */
+
+ 
 }
 
 a.navigation-link {
-
+ 
+  padding: 5px 15px; 
   font-weight: 700;
   font-size: 14px;
+  font-style: normal;
   line-height: 26px;
   color: #000000;
   text-decoration: none;
   width: 100px;
   margin: auto;
+  text-transform: uppercase;
+  
+  /* font-stretch: 50%; */
 }
 
+.navigation-list li:nth-child(1)
+.navigation-list li:nth-child(2){
+  text-align: left;
+}
+.navigation-list li:nth-child(1){
+  margin-left: 72px;
+}
+.navigation-list li:nth-child(2){
+  margin: 0;
+	padding: 0;
+}
+
+.navigation-list li:nth-child(3),
+.navigation-list li:nth-child(4){
+  text-align: right;
+}
+.navigation-list li:nth-child(4){
+  margin-right: 72px;
+}
+
+.nav-bar:nth-child(3){
+  margin-left: auto;
+}
+
+.nav-bar{
+  width: 200px;
+}
 .navigation-link:hover{
   color:#81B3D2;
 }
@@ -114,8 +153,11 @@ a.navigation-link {
   justify-content: center;
   align-items: center;
   flex-direction:column;
+  text-align: center;
   padding-top: 42px;
+  
   padding-bottom: 51px;
+  /* width: 470px; */
 }
 
 
@@ -126,6 +168,9 @@ a.navigation-link {
   font-size: 21px;
   color: #000000;
   font-weight: 700;
+  /* padding-top:43px ; */
+  width: 470px;
+  margin-bottom: 17px;
 }
 
 
@@ -135,7 +180,9 @@ background-color: #81B3D2;
 align-items: center;
 width: 400px;
 text-align: center;
-
+line-height: 0;
+padding-top: 0;
+margin-top: 0;
 }
 
 
@@ -154,6 +201,7 @@ text-align: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
+  padding-bottom: 0px;
 }
 
 
@@ -172,7 +220,9 @@ text-transform: uppercase;
   align-items: center;
   text-align: center;
   margin-top: 47px;
+  
   width: 100%;
+  padding: 0%;
 }
 
 
@@ -209,14 +259,15 @@ width: 100%;
 }
 
 .eat{
-  background-image: url("../images/icon-2.png");
+  background-image: url("../images/icon-3.png");
+  
   background-repeat: no-repeat;
   background-position: top;
   padding-top: 107px;
 }
 
 .souv {
-  background-image: url("../images/icon-3.png");
+  background-image: url("../images/icon-2.png");
   background-repeat: no-repeat;
   background-position: top;
   padding-top: 107px;
@@ -238,6 +289,7 @@ width: 100%;
       display: flex;
       flex-wrap: wrap;
       width:100%;
+      align-content: flex-start
     }
     
     
@@ -295,6 +347,7 @@ width: 100%;
       justify-content:space-between;
       background-color: #EEEEEE;
     }
+   
 
 .search-filter {
 display: flex;
@@ -436,7 +489,7 @@ fieldset{
   justify-content: space-around;
   width: calc(100% / 2);
 }
-/* .reitihg{
+/* .reiting{
   padding-left:322px;
 } */
 
