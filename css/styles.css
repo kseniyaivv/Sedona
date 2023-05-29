@@ -25,6 +25,7 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
   width:100%;
+  letter-spacing: -1px;
  
 }
 
@@ -41,10 +42,9 @@ body {
 .navigation-list {
   list-style: none;
   display:flex;
-flex-direction: row;
   width: 100%; 
   margin: 0px;
-  padding: 0px;
+  padding: 0;
   position: relative;
   flex-wrap: wrap;
   align-items: center;
@@ -55,7 +55,7 @@ flex-direction: row;
 
 a.navigation-link {
  
-  padding: 5px 15px; 
+  /* padding:5px 0px;  */
   font-weight: 700;
   font-size: 14px;
   font-style: normal;
@@ -63,39 +63,44 @@ a.navigation-link {
   color: #000000;
   text-decoration: none;
   width: 100px;
-  margin: auto;
+  margin: 0;
   text-transform: uppercase;
   
   /* font-stretch: 50%; */
 }
 
 .navigation-list li:nth-child(1)
-.navigation-list li:nth-child(2){
+.navigation-list li:nth-child(2) {
   text-align: left;
 }
-.navigation-list li:nth-child(1){
+.navigation-list li:nth-child(1) {
   margin-left: 72px;
+ 
 }
-.navigation-list li:nth-child(2){
+.nav-bar{
+min-width: 228px;
+}
+.navigation-list li:nth-child(2) {
   margin: 0;
-	padding: 0;
+
 }
 
 .navigation-list li:nth-child(3),
-.navigation-list li:nth-child(4){
+.navigation-list li:nth-child(4) {
   text-align: right;
 }
-.navigation-list li:nth-child(4){
+.navigation-list li:nth-child(4) {
   margin-right: 72px;
 }
 
-.nav-bar:nth-child(3){
+/* .nav-bar:nth-child(3) */
+
+.navigation-list li:nth-child(3) {
   margin-left: auto;
+  min-width: 230px;
 }
 
-.nav-bar{
-  width: 200px;
-}
+
 .navigation-link:hover{
   color:#81B3D2;
 }
