@@ -14,21 +14,20 @@
       <header>
         <nav class="navigation">
           <ul class="navigation-list">
-            <li>
+            <li class="nav-bar left-menu">
               <a class="navigation-link" href="index.html">Информация</a>
             </li>
-            <li>
+            <li class="nav-bar left-menu">
               <a class="navigation-link" href="#">Фото и видео</a>
             </li>
-            <li></li>
-            <li>
+            
+            <li class="nav-bar right-menu">
               <a class="navigation-link" href="#">Карта штата</a>
             </li>
-            <li>
-              <a class="navigation-link active" href="#"> Гостиницы </a>
+            <li class="nav-bar right-menu">
+              <a class="navigation-link" href="hotels.html">Гостиницы</a>
             </li>
           </ul>
-          <!-- <img class="logo" src="images/logo.png" width="138" height="70" alt="ЛОГОТИП" /> -->
           <div class="logo-clk"> <a href="index.html"> <img class="logo" src="images/logo.png" width="138" height="70" alt="ЛОГОТИП" /> </a> </div>
         </nav>
       </header>
@@ -38,6 +37,7 @@
             <fieldset class="filter">
               <fieldset class="infrastructure">
               <h4> Инфраструктура: </h4>
+              <label for="pool">Бассейн</label>
               <input 
                 type="checkbox"
                 name="infrastructure"
@@ -45,7 +45,7 @@
                 id="pool"
                 checked
               />
-              <label for="pool">Бассейн</label>
+              
               <input  type="checkbox" name="infrastructure" value="parking" id="parking"/>
               <label for="parking"> Парковка </label>
               <input class="variants-filter" type="checkbox" name="infrastructure" value="wifi" id="wifi" /> <label for="wifi">Wi-Fi</label>
@@ -153,8 +153,8 @@
       </main>
       <footer>
         <fieldset class="number">
-        <p class="tittle">#visitSEDONA</p>
-        <a  class="tittle" href="#"> ТЕЛ: +7(495) 666-01-66 </a>
+        <p class="tittle hashtag">#visitSEDONA</p>
+        <a  class="tittle numb" href="#"> ТЕЛ: +7(495) 666-01-66 </a>
         </fieldset>
         <fieldset class="soc">
         <a  class="twit" href="#"> <img src="images/twitter.png" alt="twitter" /> </a>

@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="container">
-    <header>
+     <header>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="nav-bar left-menu">
@@ -30,8 +30,8 @@
         </ul>
         <div class="logo-clk"> <a href="index.html"> <img class="logo" src="images/logo.png" width="138" height="70" alt="ЛОГОТИП" /> </a> </div>
       </nav>
-    </header>
-    <main>
+     </header>
+     <main>
       <div class="welcome">
         <img class="wlc-sedona"
           src="images/welcome.png"
@@ -71,21 +71,21 @@
             </div>
           </div>  
             <ul class="recomendation">
-             <Li class="special-reasons">
+             <Li class="special-reasons house">
               <div class="special-reasons-content">
-              <h3 class="tittle reason-tittle house">Жильё</h3> 
+              <h3 class="tittle reason-tittle">Жильё</h3> 
               <p class="rec">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p> 
               </div>
              </Li> 
-              <li class="special-reasons">
+              <li class="special-reasons eat">
               <div class="special-reasons-content">
-              <h3 class="tittle reason-tittle eat">Еда</h3>
-              <p class="rec">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <h3 class="tittle reason-tittle">Еда</h3>
+              <p class="rec">Всегда заказывайте фирменный&nbsp;бургер, вы не разочаруетесь!</p>
               </div>
               </li>
-              <li class="special-reasons">
+              <li class="special-reasons souv">
               <div class="special-reasons-content">
-              <h3 class="tittle reason-tittle souv">Сувениры</h3>
+              <h3 class="tittle reason-tittle">Сувениры</h3>
               <p class="rec">Не только китайского, но и местного производства
               </p>
               </div>
@@ -93,10 +93,10 @@
             </ul>
 
           </li>
-          <li class="main-reasons-with-foto">
+          <li class="main-reasons-with-foto grey">
             <div class="wrapper-reason-2"> 
              <div class="reason-with-foto">
-               <h3 class="tittle reason-tittle with-foto"> Там есть Мост дьявола</h3>
+               <h3 class="tittle reason-tittle with-foto"> Там есть<br> Мост дьявола</h3>
                <p>— №2 —</p>
                 <p class="reason-blue">Да, по нему можно пройти! Если конечно
                 вы осмелитесь</p>
@@ -116,7 +116,7 @@
              <h3 class="tittle reason-tittle"> небольшая
               площадь </h3>
               <p>— №3 —</p>
-              <p> все достопримечательности
+              <p class="fact s"> все достопримечательности
                 находятся очень близко </p>
             </div>
           </li>
@@ -125,7 +125,7 @@
              <h3 class="tittle reason-tittle">красивая
               дорога</h3>
              <p> — №4 —</p>
-              <p> ехать в седону из лас-вегаса совсем
+              <p class="fact road"> ехать в седону из лас-вегаса совсем
                 не скучно!</p>
             </div>
           </li>
@@ -134,40 +134,56 @@
              <h3 class="tittle reason-tittle">мало
               туристов</h3>
               <p>— №5 —</p>
-              <p>большинство едет в гранд каньон
+              <p class="fact tourists">большинство едет в гранд каньон
                 и толпится там</p>
             </div>
           </li>
           </ul>
         </div>
         
-        </div>
+        
       </section>
       <section class="hotel-search-section">
         <div class="interesting">
           <div class="text-int">
-         ><h4 class="search-title">  Заинтересовались? </h4>
-         <p>Укажите предполагаемые даты поездки, и мы покажем
+         <h4 class="search-title">  Заинтересовались? </h4>
+         <p class="search-p">Укажите предполагаемые даты поездки,<br> и мы покажем
           вам лучшие предложения гостиниц в седоне</p> </div>
-            <button class="search-hotel">ПОИСК ГОСТИНИЦЫ В седоне</button>
+          <button class="search-hotel">ПОИСК ГОСТИНИЦЫ В седоне</button>
+          
+
         </div>
+         <!-- <div class="map">
+          <img class="maps" src="images/map.png">
+         </div> -->
       </section>
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
+      <div class="wrapper-form-map">
+       <div class="wrapper-button-search"></div>      
+      
+       <form action="https://echo.htmlacademy.ru/courses" method="post">
         <fieldset class="booking">
             <div class="search-filter">
-            <div class="dataon"><label  for="check-in">Дата заезда:</label>
+              <div class="wrapper-filter-search">
+            <div class="dataon"><label  for="check-in" class="text-in-filter">Дата заезда:</label>
             <input
             class="filter-data"
               type="date"
               name="check-in"
               id="check-in"
-              value="2017-04-22"
+             value="24 апреля 2017"
+             min="2017-01-01"
+              max="2018-12-31"
             />
           </div>
-           <div class="dataex"><label for="exit">Дата выезда:</label>
-            <input class="filter-exit" type="date" name="exit" id="exit" value="2017-07-04" />
+           <div class="dataex"><label for="exit" class="text-in-filter">Дата выезда:</label>
+            <input class="filter-exit" type="date" name="exit" id="exit" value="4 июля 2017" />
           </div> 
-            <div class="ad"> <label for="adult">Взрослые:</label>
+           <div class="ad">
+              
+            <label for="adult" class="text-in-filter number-of-adults">Взрослые:</label>
+            <button class="bt-minus">
+              <img src="images/minusad.svg">
+             </button>
             <input
               class="filter-adult"
               type="number"
@@ -178,8 +194,15 @@
               max="100"
               step="1"
             />
-           
-            <label for="child">Дети:</label>
+            <button class="bt-plus">
+              <img src="images/plusad.svg">
+             </button>
+           </div>
+           <div class="childs">
+            <label class="text-in-filter number-of-child">Дети:</label>
+            <button class="bt-minus">
+              <img src="images/minusad.svg">
+             </button>
             <input
              class="filter-child"
               type="number"
@@ -189,33 +212,38 @@
               max="100"
               step="1"
             />
-            <div class="map">
-              <img class="maps" scr="images/map.png">
-            </div>
+            <button class="bt-plus">
+              <img src="images/plusad.svg">
+             </button>
+            
           </div>
             <input class="button-search" type="submit" name="search" id="search" value="Найти" />
           </div>
+         </div>
           
 
           </fieldset>
         </form>
-      
-    </main>
-    <footer class="html">
+      </div>
+     
+     </main>
+     <footer class="html">
       <fieldset class="number">
-      <p class="tittle">#visitSEDONA</p>
-      <a  class="tittle" href="#"> ТЕЛ: +7(495) 666-01-66 </a>
+      <p class="tittle hashtag">#visitSEDONA</p>
+      <div class="numb1"><a  class="tittle numb" href="+74956660166">ТЕЛ: +7(495) 666-01-66</a></div>
       </fieldset>
       <fieldset class="soc">
-      <a class="twit" href="#"> <img src="images/twitter.png" alt="twitter" /> </a>
+      <a class="twit" href="#"> <img src="images/twit-swg.png" alt="twitter" /> </a>
       <a class="fb" href="#"> <img src="images/fb-icon.png" alt="Fasebook" /> </a>
       <a class="youtube" href="#"> <img src="images/youtube.png" alt="Youtube" /> </a>
-    </fieldset>
-    <fieldset class="site">
+     </fieldset>
+     <fieldset class="site">
       <p>Website by</p>
       <a href="#"> <img src="images/logo-htmlacademy.png" /> </a>
-    </fieldset>
-    </footer>
-  
+     </fieldset>
+     </footer>
+   </div>
+
   </body>
+
 </html>
