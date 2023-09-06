@@ -181,7 +181,8 @@
            <div class="ad">
               
             <label for="adult" class="text-in-filter number-of-adults">Взрослые:</label>
-            <button class="bt-minus">
+            <div class="quantity">
+            <button class="bt-minus" type="button">
               <img src="images/minusad.svg">
              </button>
             <input
@@ -194,13 +195,15 @@
               max="100"
               step="1"
             />
-            <button class="bt-plus">
+            <button class="bt-plus" type="button">
               <img src="images/plusad.svg">
              </button>
+            </div>
            </div>
            <div class="childs">
             <label class="text-in-filter number-of-child">Дети:</label>
-            <button class="bt-minus">
+           <div class="quantity">
+            <button class="bt-minus" type="button">
               <img src="images/minusad.svg">
              </button>
             <input
@@ -212,10 +215,10 @@
               max="100"
               step="1"
             />
-            <button class="bt-plus">
+            <button class="bt-plus" type="button">
               <img src="images/plusad.svg">
              </button>
-            
+            </div>
           </div>
             <input class="button-search" type="submit" name="search" id="search" value="Найти" />
           </div>
@@ -233,13 +236,16 @@
       <div class="numb1"><a  class="tittle numb" href="+74956660166">ТЕЛ: +7(495) 666-01-66</a></div>
       </fieldset>
       <fieldset class="soc">
-      <a class="twit" href="#"> <img src="images/twit-swg.png" alt="twitter" /> </a>
-      <a class="fb" href="#"> <img src="images/fb-icon.png" alt="Fasebook" /> </a>
-      <a class="youtube" href="#"> <img src="images/youtube.png" alt="Youtube" /> </a>
+      <a class="twit" href="#"> <img src="images/twitter.png" alt="twitter"/> </a>
+      <a class="fb" href="#"> <img src="images/fb-icon.png" alt="Fasebook"/> </a>
+      <a class="youtube" href="#"> <img src="images/youtube.png" alt="Youtube"/> </a>
      </fieldset>
      <fieldset class="site">
-      <p>Website by</p>
-      <a href="#"> <img src="images/logo-htmlacademy.png" /> </a>
+      <div class="site-decor">
+      <p class="name-site">Website by </p> <a class="site-link" href="#"> <img src="images/logo-htmlacademy.png" /> </a> 
+      </div>
+      
+
      </fieldset>
      </footer>
    </div>
