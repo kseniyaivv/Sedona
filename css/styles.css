@@ -616,10 +616,18 @@ fieldset{
 .typeofhouse{
   display: flex;
   flex-direction: column;
-  display: flex;
-    width: calc(100% / 3);
-    margin: auto;
-   
+  width: calc(100% / 3);
+  margin: auto;
+  max-width: 200px;
+}
+.filter-buttons{
+  display:flex;
+  flex-direction: row; 
+  justify-content: start; 
+  align-items: center;
+}
+.spacebetween-labelinput{
+  margin-left: 10px;
 }
 .price{
   display: flex;
