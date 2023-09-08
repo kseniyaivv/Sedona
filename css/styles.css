@@ -620,6 +620,13 @@ fieldset{
   margin: auto;
   max-width: 200px;
 }
+.infrastructure{
+margin-left:72px;
+}
+.typeofhouse {
+margin-left: -150px;
+}
+
 .filter-buttons{
   display:flex;
   flex-direction: row; 
@@ -632,6 +639,8 @@ fieldset{
 .price{
   display: flex;
   flex-direction: column;
+  margin-right: 72px;
+  margin-left: 304px;
 }
   
 .results{
@@ -788,7 +797,7 @@ letter-spacing: 0.8px;
   display: flex;
   width: 100%; 
   max-width: 1200px;
-  margin-top: -121px;;
+  margin-top: -120px;
   z-index: 1;
   padding: 0px;
   position: relative;
@@ -861,4 +870,17 @@ opacity:90%;
   padding: 0;
   margin-right: 0px;
   margin-left: 0;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
 }
