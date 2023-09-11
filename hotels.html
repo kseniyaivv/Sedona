@@ -14,21 +14,21 @@
       <header>
         <nav class="navigation">
           <ul class="navigation-list">
-            <li>
+            <li class="nav-bar left-menu">
               <a class="navigation-link" href="index.html">Информация</a>
             </li>
-            <li>
+            <li class="nav-bar left-menu">
               <a class="navigation-link" href="#">Фото и видео</a>
             </li>
-            <li></li>
-            <li>
+            
+            <li class="nav-bar right-menu">
               <a class="navigation-link" href="#">Карта штата</a>
             </li>
-            <li>
-              <a class="navigation-link active" href="#"> Гостиницы </a>
+            <li class="nav-bar right-menu">
+              <a class="navigation-link" href="hotels.html">Гостиницы</a>
             </li>
           </ul>
-          <img class="logo" src="images/logo.png" width="138" height="70" alt="ЛОГОТИП" />
+          <div class="logo-clk"> <a href="index.html"> <img class="logo" src="images/logo.png" width="138" height="70" alt="ЛОГОТИП" /> </a> </div>
         </nav>
       </header>
       <main>
@@ -37,6 +37,7 @@
             <fieldset class="filter">
               <fieldset class="infrastructure">
               <h4> Инфраструктура: </h4>
+              <div class="filter-buttons"> 
               <input 
                 type="checkbox"
                 name="infrastructure"
@@ -44,39 +45,50 @@
                 id="pool"
                 checked
               />
-              <label for="pool">Бассейн</label>
-              <input  type="checkbox" name="infrastructure" value="parking" id="parking"/>
-              <label for="parking"> Парковка </label>
-              <input class="variants-filter" type="checkbox" name="infrastructure" value="wifi" id="wifi" /> <label for="wifi">Wi-Fi</label>
+              <label class="spacebetween-labelinput" for="pool">Бассейн</label>
+            </div>
+            <div class="filter-buttons">
+             <input  type="checkbox" name="infrastructure" value="parking" id="parking"/>
+             <label class="spacebetween-labelinput" for="parking"> Парковка </label> 
+            </div>
+            <div class="filter-buttons">
+              <input class="variants-filter" type="checkbox" name="infrastructure" value="wifi" id="wifi" /> 
+              <label class="spacebetween-labelinput" for="wifi">Wi-Fi</label>
+            </div>
             </fieldset>
             <fieldset class="typeofhouse">
               <h4> Тип жилья: </h4>
-              <input 
+              <div class="filter-buttons">
+                <input 
                 type="checkbox"
                 name="type"
                 id="hotel"
                 value="hotel"
                 checked
-              />
-              <label for="hotel">Гостиница</label>
-
-              <input
+               />
+               <label class="spacebetween-labelinput" for="hotel">Гостиница</label>
+              </div>
+              <div class="filter-buttons">
+               <input
                 type="checkbox"
                 name="type"
                 id="motel"
                 value="motel"
                 checked
             
-              />
-              <label for="motel">Мотель</label>
-              <input 
+               />
+               <label class="spacebetween-labelinput" for="motel">Мотель</label>
+              </div>
+              <div class="filter-buttons">
+               <input 
                 type="checkbox"
                 name="type"
                 id="apartments"
                 value="apartments"
                 checked
-              />
-              <label for="apartments">Апартаменты</label>
+               />
+               <label class="spacebetween-labelinput" for="apartments">Апартаменты</label>
+              </div>
             </fieldset>
             <fieldset class="price">
               <h4> Стоимость в сутки (Р):</h4>
@@ -119,7 +131,7 @@
               <p class="description-result">Гостиница От 4000 Р.</p>
               <button class="button-detail">Подробнее</button> <button class="button-booking">Забронировать</button>
               </div>
-              <div class="reitihg">
+              <div class="reiting">
               <img src="images/Shape(2).png" />
               <p class="rating-result">Рейтинг: 8,5</p>
               </div>
@@ -152,8 +164,8 @@
       </main>
       <footer>
         <fieldset class="number">
-        <p class="tittle">#visitSEDONA</p>
-        <a  class="tittle" href="#"> ТЕЛ: +7(495) 666-01-66 </a>
+        <p class="tittle hashtag">#visitSEDONA</p>
+        <a  class="tittle numb" href="#"> ТЕЛ: +7(495) 666-01-66 </a>
         </fieldset>
         <fieldset class="soc">
         <a  class="twit" href="#"> <img src="images/twitter.png" alt="twitter" /> </a>
@@ -161,8 +173,9 @@
         <a class="youtube" href="#"> <img src="images/youtube.png" alt="Youtube" /> </a>
       </fieldset>
       <fieldset class="site">
-        <p>Website by</p>
-        <a href="#"> <img src="images/logo-htmlacademy.png" /> </a>
+        <div class="site-decor">
+        <p class="name-site">Website by </p> <a class="site-link" href="#"> <img src="images/logo-htmlacademy.png" /> </a> 
+        </div>
       </fieldset>
       </footer>
      </div>
