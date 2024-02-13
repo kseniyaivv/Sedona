@@ -625,9 +625,19 @@ width: 346px;
 .filter-data:hover + .calendar{
   color:#000000;
 }
+.filter-data:focus + .calendar{
+  color:#81B3D2;
+}
+
+.filter-exit:hover + .calendar{
+  color:#000000;
+}
+.filter-exit:focus + .calendar{
+  color:#81B3D2;
+}
 
 .calendar{
-  color:
+  color: #A9A9A9;
 }
 
 
@@ -1018,6 +1028,21 @@ opacity:90%;
 display: flex;
 align-self: center;
 justify-content: center;
+color:#A9A9A9;
+}
+.bt-plus:hover{
+  color:#000000; 
+}
+
+.bt-minus:hover{
+  color:#000000;
+}
+
+.bt-minus:focus{
+  color:#81B3D2;
+}
+.bt-plus:focus{
+  color:#81B3D2;
 }
 
 
