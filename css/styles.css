@@ -64,7 +64,7 @@ a{
 
 
 
-.logo{
+.logo-link{
   top: 0;
   position: absolute;
   z-index: 1;
@@ -644,7 +644,8 @@ width: 346px;
 
 .filter-adult,
 .filter-child{
-padding: 5px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 margin: 0;
 border: none;
 background: #F2F2F2;
@@ -709,8 +710,19 @@ justify-content: space-between;
 .sort{
   display: flex;
   align-items:center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  min-height: 81px 
+}
 
+.title-hotel{
+  padding-bottom: 0;
+  margin-left: 72px;
+  margin-right: 45px;
+}
+.knopki{
+  margin-left: 45px;
+  display: inline-flex;
+  justify-content: space-between;
 }
 
 .filter{
@@ -737,9 +749,7 @@ fieldset{
 .typeofhouse{
   display: flex;
   flex-direction: column;
-  /* width: calc(100% / 3); */
-  /* margin: auto; */
-  /* max-width: 200px; */
+  row-gap: 10px;
   min-width: 20%;
 }
 .infrastructure{
@@ -1029,6 +1039,7 @@ display: flex;
 align-self: center;
 justify-content: center;
 color:#A9A9A9;
+padding: 20px 10px;
 }
 .bt-plus:hover{
   color:#000000; 
