@@ -15,7 +15,7 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="nav-bar left-menu">
-              <a class="navigation-link" href="index.html">Информация</a>
+              <a class="navigation-link active" href="index.html">Информация</a>
             </li>
             <li class="nav-bar left-menu">
               <a class="navigation-link" href="#">Фото и видео</a>
@@ -28,14 +28,14 @@
               <a class="navigation-link" href="hotels.html">Гостиницы</a>
             </li>
           </ul>
-          <div class="logo-clk"> <a href="index.html"> <img class="logo" src="images/logo.png" width="138" height="70" alt="ЛОГОТИП" /> </a> </div>
+          <a class="logo-link" href="index.html"> <img class="logo" src="images/logo.png" width="138" height="70" alt="ЛОГОТИП" /> </a> 
         </nav>
       </header>
       <main>
         <form method="get">
           <div class="wrapper-filter">
-            <fieldset class="filter">
-              <fieldset class="infrastructure">
+            <fieldset class="filter field">
+              <div class="infrastructure">
               <h4> Инфраструктура: </h4>
               <div class="filter-buttons"> 
               <input 
@@ -56,8 +56,8 @@
               <input class="variants-filter visually-hidden checkbox-control" type="checkbox" name="infrastructure" value="wifi" id="wifi" /> 
               <label class="spacebetween-labelinput checkbox-label" for="wifi">Wi-Fi</label>
             </div>
-            </fieldset>
-            <fieldset class="typeofhouse">
+            </div>
+            <div class="typeofhouse">
               <h4> Тип жилья: </h4>
               <div class="filter-buttons">
                 <input 
@@ -93,36 +93,41 @@
                />
                <label class="spacebetween-labelinput checkbox-label" for="apartments">Апартаменты</label>
               </div>
-            </fieldset>
-            <fieldset class="price">
+            </div>
+            <div class="price">
               <h4> Стоимость в сутки (Р):</h4>
               <input type="range" min="0" max="3000" />
               <input class="input-show" type="submit" value="Показать" />
-            </fieldset>
+            </div>
             </fieldset>
           </div>
         </form>
         <form method="get">
           <div class="sort">
-          <h2 class="tittle">Найдено: 3</h2>
+          <h2 class="tittle title-hotel">Найдено: 3</h2>
           <p>Сортировка:</p>
-          <div>
-            <input type="radio" id="price" name="sort" value="price" />
-            <label class="sorting" for="price">По цене</label>
+          
+            <input type="radio"  style="display: none" id="price" name="sort" value="price" />
+            <label class="sorting active-price" for="price">По цене</label>
 
-            <input type="radio" id="type" name="sort" value="type" />
+            <input type="radio" style="display: none" id="type" name="sort" value="type" />
             <label class="sorting" for="type">По типу</label>
 
-            <input type="radio" id="rating" name="sort" value="rating" />
+            <input type="radio" style="display: none" id="rating" name="sort" value="rating" />
             <label class="sorting" for="rating">По рейтингу</label>
-
-            <label>
-              <input  type="radio" name="arrow" id="up" />
-              <img src="images/up.png" alt="стрелка вверх" class="arrows" />
+           
+          <div class="bt-arrows">
+            <label  class="bt-arrows-up">
+              <input  type="radio" style="display: none" name="arrow" id="up" />
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 0L0 10H11L5.5 0Z" fill="currentColor"/>
+                </svg>
             </label>
-            <label>
-              <input  type="radio" name="arrow" id="down" />
-              <img src="images/down.png" alt="стрелка вниз" class="arrows" />
+            <label  class="bt-arrows-dw active-bt-arrows-dw" >
+              <input  type="radio"style="display: none" name="arrow" id="down" />
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 10L11 0L0 0L5.5 10Z" fill="currentColor"/>
+                </svg>
             </label>
           </div>
         </div>
@@ -131,41 +136,54 @@
           <ul class="results">
             <li class="descriptionoftheresult">
               <div class="pfotoofhotels"> <img src="images/Layer21.png" /> </div>
-              <div class="textofhotels">Amara Resort & Spa
+              <div class="textofhotels"><a class="hotel_link" href="#">Amara Resort & Spa</a>
               <p class="description-result">Гостиница От 4000 Р.</p>
-              <button class="button-detail">Подробнее</button> <button class="button-booking">Забронировать</button>
+              <div class="bt-reserv">
+                <button class="button-detail">Подробнее</button>
+                 <button class="button-booking">Забронировать</button>
+              </div>  
+
               </div>
               <div class="reiting">
+              <div class="stars">
               <img src="images/Shape(2).png" />
               <img src="images/Shape(2).png" />
               <img src="images/Shape(2).png" />
               <img src="images/Shape(2).png" />
+            </div>
               <p class="rating-result">Рейтинг: 8,5</p>
               </div>
             </li>
 
             <li class="descriptionoftheresult">
               <div class="pfotoofhotels"> <img src="images/Layer.png" /> </div>
-              <div class="textofhotels"> Desert Quail Inn
+              <div class="textofhotels"> <a class="hotel_link" href="#">Desert Quail Inn</a>
               <p class="description-result">Мотель От 3000 Р.</p>
               
-              <button class="button-detail">Подробнее</button> <button class="button-booking">Забронировать</button>
+              <button class="button-detail">Подробнее</button> 
+              <button class="button-booking">Забронировать</button>
+              
               </div>
-              <div class="reitihg">
+              <div class="reiting">
+                <div class="stars">
               <img src="images/Shape(2).png" /> 
               <img src="images/Shape(2).png" />
               <img src="images/Shape(2).png" />
+            </div>
               <p class="rating-result">Рейтинг: 8,9</p> </div>
             </li>
             
             <li class="descriptionoftheresult">
               <div class="pfotoofhotels"> <img src="images/Rectangle.png" /></div>
-              <div class="textofhotels"> Villas at Poco Diablo
+              <div class="textofhotels"> <a class="hotel_link" href="#">Villas at Poco Diablo</a>
               <p class="description-result">Апартаменты От 3000 Р.</p>
               <button class="button-detail">Подробнее</button> <button class="button-booking">Забронировать</button>
                </div>
 
-            <div class="reitihg"><img src="images/Shape(2).png" /> <img src="images/Shape(2).png" /> 
+            <div class="reiting">
+              <div class="stars">
+              <img src="images/Shape(2).png" /> <img src="images/Shape(2).png" /> 
+            </div>
               <p class="rating-result">Рейтинг: 9,2</p> </div>
             </li>
           </ul>
